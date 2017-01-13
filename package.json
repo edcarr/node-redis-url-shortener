@@ -1,5 +1,5 @@
 {
-  "name": "node-url-shortner",
+  "name": "node-redis-url-shortener",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edcarr/node-url-shortner.git"
+    "url": "git+https://github.com/edcarr/node-redis-url-shortener.git"
   },
   "author": "ed",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/edcarr/node-url-shortner/issues"
+    "url": "https://github.com/edcarr/node-redis-url-shortener/issues"
   },
-  "homepage": "https://github.com/edcarr/node-url-shortner#readme",
+  "homepage": "https://github.com/edcarr/node-redis-url-shortener#readme",
   "dependencies": {
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.1",
