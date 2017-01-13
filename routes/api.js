@@ -1,5 +1,5 @@
 import { Router } from "express";
-import client from "../db/redis";
+import client from "../lib/redis";
 import encode from "../lib/encode";
 import validate from "../lib/validate";
 
