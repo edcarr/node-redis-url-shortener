@@ -28,7 +28,7 @@ router.post("/", (req, res) => {
                 const hash = encode(count);
                 client.set(hash, url, (err, result) => {
                     if (!err) {
-                        res.status(200).send(result);
+                        res.status(200).send({hash});
                     } else {
                         res.status(500).send({message: err})
                     }
