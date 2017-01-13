@@ -1,6 +1,7 @@
 import { Router } from "express";
 import client from "../db/redis";
 import encode from "../lib/encode";
+import validate from "../lib/validate";
 
 const router = Router();
 
@@ -21,7 +22,7 @@ router.get("/:hash", (req, res) => {
 
 router.post("/", (req, res) => {
     const { url } = req.body;
-    if (url) {
+    if (url && validate(url)) {
         client.dbsize((err, count) => {
             if (!err) {
                 const hash = encode(count);
@@ -37,7 +38,7 @@ router.post("/", (req, res) => {
             }
         });
     } else {
-        res.status(400).send({message: "No url provided"});
+        res.status(400).send({message: "Url not valid"});
     }
 });
 
