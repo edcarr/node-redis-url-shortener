@@ -2,8 +2,9 @@
   "name": "node-url-shortner",
   "version": "1.0.0",
   "description": "",
-  "main": "babel-node app.js",
+  "main": "app.js",
   "scripts": {
+    "start": "babel-node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
